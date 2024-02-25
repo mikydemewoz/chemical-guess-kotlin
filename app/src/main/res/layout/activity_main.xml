@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_view"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/optimal_margin"
+        android:text="Hello world"
+        android:layout_marginBottom="@dimen/optimal_margin"
+        ></TextView>
+    <EditText
+        android:id="@+id/guess_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text"
+        android:hint="Type here"
+        android:layout_marginBottom="@dimen/optimal_margin"/>
+
+    <Button
+        android:id="@+id/guess"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:text="Guess"/>
+
+    <EditText
+        android:id="@+id/add_chemical_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text"
+        android:hint="Type a new chemical name to add"
+        android:layout_marginBottom="@dimen/optimal_margin"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:text="Add chemical"
+        android:layout_marginBottom="50dp"/>
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/chemical"/>
+
+
+</LinearLayout>
